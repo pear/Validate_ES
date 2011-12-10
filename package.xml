@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package packagerversion="1.7.2" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
-http://pear.php.net/dtd/tasks-1.0.xsd
-http://pear.php.net/dtd/package-2.0
-http://pear.php.net/dtd/package-2.0.xsd">
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
  <name>Validate_ES</name>
  <channel>pear.php.net</channel>
  <summary>Validation class for ES</summary>
@@ -11,9 +8,7 @@ http://pear.php.net/dtd/package-2.0.xsd">
  * VAT Number (CIF)
  * Back Account Number
  * postalCode
- * Social Security Number
-  
- </description>
+ * Social Security Number</description>
  <lead>
   <name>Jesús Espino</name>
   <user>jespino</user>
@@ -26,8 +21,8 @@ http://pear.php.net/dtd/package-2.0.xsd">
   <email>cox@idecnet.com</email>
   <active>no</active>
  </lead>
- <date>2011-12-09</date>
- <time>19:36:00</time>
+ <date>2011-12-10</date>
+ <time>11:00:37</time>
  <version>
   <release>0.6.1</release>
   <api>0.5.1</api>
@@ -42,12 +37,15 @@ Clean of ERROR and WARNINGS of php Code Sniffer.
 Fixed an Uninitialized string offset.
  </notes>
  <contents>
-  <dir name="/">
-   <dir name="Validate">
-    <file name="ES.php" role="php" />
-   </dir> <!-- //Validate -->
-   <file name="LICENSE" role="doc" />
-  </dir> <!-- / -->
+  <dir baseinstalldir="/" name="/">
+   <file baseinstalldir="/" md5sum="c7e4e198c6563c4660729f0c0023dd45" name="tests/validate_ES_ccc.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="a7394db42055df0e938a52c62e131012" name="tests/validate_ES_cif.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="3a41315bbc2932c3316fcee59ed3369d" name="tests/validate_ES_dni.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="4bdf635d12e1c22e47a219bfdfdea9c9" name="tests/validate_ES_postalCode.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="5004bc914032861e50955fb4825236d6" name="tests/validate_ES_ssn.phpt" role="test" />
+   <file baseinstalldir="/" md5sum="705ae44040802ca41143845416af4195" name="Validate/ES.php" role="php" />
+   <file baseinstalldir="/" md5sum="f8790e48b597dff12a643e08e9be3fab" name="LICENSE" role="doc" />
+  </dir>
  </contents>
  <dependencies>
   <required>
@@ -66,6 +64,23 @@ Fixed an Uninitialized string offset.
  </dependencies>
  <phprelease />
  <changelog>
+  <release>
+   <version>
+    <release>0.5.2</release>
+    <api>0.5.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <license>New BSD</license>
+   <notes>
+QA release
+Updated to package 2.0
+Bug #9084 Validate_ES::dni wrong use of function arguments
+Bug #4660 La validación es incorrecta.
+   </notes>
+  </release>
   <release>
    <version>
     <release>0.6.0</release>
@@ -87,24 +102,6 @@ Added test for all checks (ccc, cif, dni, ssn and postalCode)
   </release>
   <release>
    <version>
-    <release>0.5.2</release>
-    <api>0.5.1</api>
-   </version>
-   <stability>
-    <release>alpha</release>
-    <api>alpha</api>
-   </stability>
-   <license>New BSD</license>
-   <notes>
-QA release
-Updated to package 2.0
-Bug #9084 Validate_ES::dni wrong use of function arguments
-Bug #4660 La validación es incorrecta.
-       
-   </notes>
-  </release>
-  <release>
-   <version>
     <release>0.5.0</release>
     <api>0.5.0</api>
    </version>
@@ -114,9 +111,9 @@ Bug #4660 La validación es incorrecta.
    </stability>
    <date>2005-05-20</date>
    <license>New BSD</license>
-   <notes>- Split from Validate into independent package
+   <notes>
+- Split from Validate into independent package
 - CS fixes
-    
    </notes>
   </release>
   <release>
@@ -130,8 +127,24 @@ Bug #4660 La validación es incorrecta.
    </stability>
    <date>2005-11-04</date>
    <license>New BSD</license>
-   <notes>Swapped to BSD licence
-
+   <notes>
+Swapped to BSD licence
+   </notes>
+  </release>
+  <release>
+   <version>
+    <release>0.6.1</release>
+    <api>0.5.1</api>
+   </version>
+   <stability>
+    <release>alpha</release>
+    <api>alpha</api>
+   </stability>
+   <date>2011-12-10</date>
+   <license>New BSD</license>
+   <notes>
+Clean of ERROR and WARNINGS of php Code Sniffer.
+Fixed an Uninitialized string offset.
    </notes>
   </release>
  </changelog>
