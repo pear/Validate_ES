@@ -3,7 +3,7 @@
 /**
  * Specific validation methods for data used in Spain
  *
- * PHP Versions 4 and 5
+ * PHP Versions 5
  *
  * @category  Validate
  * @package   Validate_ES
@@ -35,11 +35,6 @@
 // |         Jesús Espino <jespinog@gmail.com>                            |
 // +----------------------------------------------------------------------+
 //
-
-/**
-* Requires base class Validate
-*/
-require_once 'Validate.php';
 
 /**
  * Data validation class for Spain
