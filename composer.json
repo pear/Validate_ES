@@ -1,0 +1,36 @@
+{
+    "authors": [
+        {
+            "email": "jespinog@gmail.com",
+            "name": "Jes\u00fas Espino",
+            "role": "Lead"
+        },
+        {
+            "email": "cox@idecnet.com",
+            "name": "Tomas V.V.Cox",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Validate_ES": "./"
+        }
+    },
+    "description": "More info available on: http://pear.php.net/package/Validate_ES",
+    "include-path": [
+        "./"
+    ],
+    "license": "New BSD",
+    "name": "pear/validate_es",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=Validate_ES",
+        "source": "https://github.com/pear/Validate_ES"
+    },
+    "type": "library",
+    "require": {
+        "pear/pear_exception": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
